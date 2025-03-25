@@ -1,0 +1,1171 @@
+/**************************************************************************/
+/*                              Color Variables
+/**************************************************************************/
+#overlay {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-Index: 200;
+  /*
+  MsFilter: "progid: DXImageTransform.Microsoft.Alpha(Opacity = 60)";
+  filter: alpha(opacity=60);
+  -moz-opacity: 0.6;
+  KhtmlOpacity: 0.6;*/
+  opacity: 0.6;
+}
+
+div.configContainer {
+  font: 14pt Open Sans;
+  font-weight: 500;
+  display: none;
+  width: 60%;
+  min-width: 680px;
+  background: whitesmoke;
+  position: fixed;
+  margin: 10% 20% 25% 15%;
+  top: 0;
+  left: 0;
+  z-index: 250;
+  border-radius: 2px;
+  filter: alpha(opacity=100);
+  -moz-opacity: 1;
+  KhtmlOpacity: 1;
+  opacity: 1;
+  MsFilter: "progid: DXImageTransform.Microsoft.Alpha(Opacity = 100)";
+}
+
+#saveContainer, #configContainer, #errorContainer, #warningContainer, #imageUploadContainer, #textContainer, #settingsContainer {
+  min-height: 480px;
+}
+
+#resultContainer {
+  height: 200px;
+}
+
+#configContainer.next {
+  left: 80%;
+}
+
+#previewContainer {
+  background: none;
+  width: 760px;
+  margin: 2% 25% 20% 15%;
+}
+
+#previewContainerDiv {
+  float: left;
+}
+
+#previewClose,
+#previewReload {
+  margin: 10px;
+}
+
+#previewClose:hover,
+#previewReload:hover {
+  color: #f3511d;
+}
+
+#previewContainer iframe {
+  position: relative;
+  width: 760px;
+  border: none;
+  background: white;
+}
+
+#previewClose,
+#previewReload {
+  display: none;
+  float: right;
+  color: white;
+  font-size: 1em;
+}
+
+div#containerDiv, div#dataContainerDiv {
+  background: whitesmoke;
+  overflow: auto;
+}
+
+/**************************************************************************/
+/*                              Color Variables
+/**************************************************************************/
+a.button {
+  z-index: 20;
+  padding: 6px;
+  cursor: default;
+  text-decoration: none;
+  font-size: 14px;
+  color: #039be5;
+  border: 0;
+  min-width: 72px;
+  border-radius: 2px;
+}
+
+a.button:hover:enabled {
+  background-color: #eee;
+}
+
+a.button:active:enabled {
+  background-color: #e0e0e0;
+}
+
+a.button:focus {
+  background-color: #eee;
+  font-weight: 600;
+}
+
+a.button:focus:hover {
+  background-color: #e0e0e0;
+}
+
+a.button:focus:active {
+  background-color: #e1f5fe;
+}
+
+button.nav, input[type=button], input[type=submit] {
+  outline: 0;
+  border-radius: 2px;
+  background: #0288d1;
+  min-width: 72px;
+  color: white;
+  height: 30px;
+  position: relative;
+  border: none;
+  margin: 10px 10px 10px 10px;
+}
+
+button.warningButton {
+  background: none;
+  border: 1px solid #0288d1;
+  border-radius: 2px;
+  color: #212121;
+}
+
+button.warningButton:hover {
+  color: white;
+}
+
+button:disabled {
+  background: #dfdfdf;
+}
+
+button.nav:hover:enabled, input[type=button]:hover, input[type=submit]:hover {
+  background: #01579b;
+}
+
+button.next {
+  float: right;
+}
+
+input[type=submit]#submitUpload {
+  height: 38px;
+}
+
+input[type=submit].next {
+  /*left: 85%;
+  position: absolute;
+  margin: 0;*/
+  float: right;
+}
+
+input[type=button]#imageUpload {
+  float: right;
+  margin-top: 5px;
+  top: 3px;
+}
+
+input[type="radio"] {
+  width: 18px;
+}
+
+input[type="radio"].error {
+  border: 2px solid red;
+}
+
+input[type="radio"], input[type="radio"] + label {
+  display: inline-block;
+  height: 18px;
+  vertical-align: middle;
+}
+
+input[type="radio"] + label {
+  padding-left: 10px;
+  position: relative;
+}
+
+input#search {
+  border: none;
+  padding-left: 10px;
+  outline: none;
+}
+
+input[type='text'].form, textarea.form {
+  padding: 5px;
+  box-sizing: content-box;
+  font-size: 1em;
+}
+
+input[type='text'].inputTextInvalid {
+  border-color: #f3511d;
+}
+
+input#search::-webkit-input-placeholder {
+  color: #0288d1;
+}
+
+input#search:-moz-placeholder {
+  /* Firefox 18- */
+  color: #0288d1;
+}
+
+input#search::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #0288d1;
+}
+
+input#search:-ms-input-placeholder {
+  color: #0288d1;
+}
+
+/**************************************************************************/
+/*                         Image Gallery Settings
+/**************************************************************************/
+div#imageGallery {
+  top: 0;
+  left: 0;
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  width: 900px;
+  height: 590px;
+  background-color: whitesmoke;
+  text-align: left;
+  border-color: #ddd;
+  border-style: none solid solid;
+  border-width: medium 1px 1px;
+  border-radius: 2px;
+  font: 14pt Open Sans;
+  font-weight: 500;
+}
+
+#imageGallery .informational, #imageUploadContainer .informational {
+  height: 50px;
+}
+
+div#modal-container {
+  padding: 10px 60px;
+}
+
+div#gallery {
+  height: 260px;
+  padding: 10px;
+  background: white;
+}
+
+div#ads {
+  clear: both;
+  padding: 12px 0 12px 66px;
+}
+
+div#footer {
+  clear: both;
+  color: #777;
+  margin: 0 auto;
+  padding: 20px 0 40px;
+  text-align: center;
+}
+
+div#thumbs {
+  background: white;
+  height: 330px;
+  width: 370px;
+  padding: 10px 10px 10px 20px;
+}
+
+div#thumbs, div#gallery, div#imageProperties, div.searchContainer {
+  box-shadow: 1px 1px 7px 0px #777;
+}
+
+#imageProperties {
+  margin-top: 10px;
+  padding-top: 5px;
+  height: 60px;
+  background: white;
+}
+
+.imageProperty {
+  margin: 0 0 0 15px;
+  float: left;
+  width: 260px;
+}
+
+#imagePropertyContainer {
+  display: none;
+  width: 260px;
+  float: left;
+  font-size: 0.8em;
+}
+
+.imageProperty span {
+  font-size: 0.7em;
+  width: 25%;
+  float: left;
+}
+
+.imageProperty div div span {
+  width: 30%;
+}
+
+.imageProperty .property {
+  padding-left: 10px;
+  width: 55%;
+  height: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+
+.imageProperty .property, .imageProperty .labelTitle {
+  text-align: left;
+}
+
+.carotaEditorCanvas {
+  overflow: hidden;
+  padding: 0;
+  border: 1px solid transparent;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.carotaEditorCanvas:hover {
+  border: 1px dashed #212121;
+}
+
+div.formulaContainer {
+  font-family: 'Open Sans';
+  padding: 10px;
+  overflow-y: scroll;
+}
+
+div.formulaDiv {
+  width: 100%;
+  overflow: auto;
+}
+
+div.formulaTitle {
+  font-weight: 400;
+  margin: 0 20px 0 20px;
+}
+
+div.formulaRowDiv {
+  margin-toxp: 5px;
+}
+
+div.formulaRowDiv span,
+input.formulaInput,
+div.formulaRowDiv input[type=text] {
+  float: none;
+}
+
+div.newFormulaDiv {
+  margin-top: 10px;
+  background: #dcedc8;
+  width: 100%;
+  height: 25px;
+}
+
+span.newFormulaSpan, div.footerBar {
+  color: #689f38;
+  font-size: 10pt;
+  padding: 5px 10px;
+}
+
+i.formulaRemove {
+  margin-left: 5px;
+  color: #9e9e9e;
+}
+
+i.formulaRemove:hover {
+  color: #be350b;
+}
+
+i.newFormulaButton {
+  margin: 5px 14px 0 0;
+  position: absolute;
+  right: 0;
+}
+
+input[type=text].formulaInput {
+  padding: 5px;
+  float: none;
+}
+
+div.dataSetDiv {
+  font-family: 'Open Sans';
+}
+
+div.dataSetDiv hr {
+  margin: 10px 0;
+}
+
+div.dataSetTable {
+  width: 100%;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+tr.dataSetRow {
+  height: 18px;
+}
+
+div.dataSetHeaderCell {
+  font-weight: 600;
+}
+
+div.dataSetHeaderCell,
+div.dataSetCell {
+  padding: 0 10px 0 0;
+  text-align: right;
+}
+
+div.rowDiv {
+  width: 95%;
+  padding: 5px;
+}
+
+div.rowDiv:hover {
+  background: #b3e5fc;
+}
+
+div#footerBar {
+  background: #dcedc8;
+  width: 100%;
+  padding: 5px 20px 5px 10px;
+  box-sizing: border-box;
+  position: relative;
+  font-family: "Open Sans";
+  font-size: .9em;
+  color: #689f38;
+}
+
+div#cellDiv {
+  background: #b3e5fc;
+}
+
+div.rowDiv input[type="text"] {
+  margin-right: 4px;
+  text-align: right;
+  padding: 5px;
+  float: left;
+}
+
+div#errors,
+div#warnings {
+  padding: 15px 10px;
+  height: 200px;
+  overflow-y: auto;
+}
+
+div.errorRow,
+div.warningRow {
+  margin-bottom: 15px;
+  float: left;
+  width: 100%;
+}
+
+i.addRowButton {
+  right: 5px;
+  position: absolute;
+  height: 20px;
+  color: #689f38;
+}
+
+i.removeRowButton {
+  color: black;
+  display: none;
+  float: left;
+  position: relative;
+  top: 5px;
+}
+
+/**************************************************************************/
+/*                              JQuery-UI Overrrides
+/**************************************************************************/
+.ui-widget-header {
+  border: none;
+}
+
+.ui-tabs .ui-tabs-panel {
+  display: block;
+  border-width: 0;
+  /* padding: 0 1em 1em 1em;*/
+  padding: 0;
+  background: none;
+}
+
+/**************************************************************************/
+/*                              Top level elements
+/**************************************************************************/
+.editCanvas {
+  float: left;
+}
+
+div#canvasContainer canvas {
+  position: absolute;
+}
+
+/**************************************************************************/
+/*                              Named elements
+/**************************************************************************/
+div.titleRow {
+  background: white;
+}
+
+div.title {
+  padding: 10px 10px 10px 16px;
+  font-size: 14pt;
+  box-sizing: border-box;
+}
+
+div.titleRow a {
+  padding: 0;
+  font-size: 1.4em;
+  text-decoration: none;
+}
+
+div.exit {
+  text-align: right;
+}
+
+#errorContainer div.title,
+#warningContainer div.title {
+  padding: 10px 20px 47px 16px;
+}
+
+#previewing {
+  max-width: 300px;
+}
+
+#saveContainer #tabs,
+#configContainer #otabs,
+#settingsContainer #settingstabs {
+  font: 12pt Open Sans;
+  height: 100%;
+  background: whitesmoke;
+}
+
+#otabs ul li,
+#tabs ul li,
+#settingstabs ul li {
+  height: 36px;
+}
+
+div.borderBox span {
+  padding-bottom: 10px;
+  float: left;
+  margin: 5px;
+}
+
+#textEditor {
+  margin-top: 10px;
+  width: 100%;
+  height: 200px;
+  border: 1px solid #dfdfdf;
+}
+
+#textEditor:active, #textEditor:hover, #textEditor:focus {
+  border: 1px solid #039be5;
+}
+
+#textBox {
+  margin-bottom: 20px;
+}
+
+#textMenuContainer {
+  display: block;
+  z-index: 1;
+  margin: 0;
+  position: relative;
+  width: 100%;
+}
+
+select#feedbackBasis {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+select#feedbackItem {
+  float: left;
+}
+
+#searchInput {
+  border: none;
+  outline: none;
+  padding: 5px;
+  width: 225px;
+}
+
+#canvasTitle, #editCanvasTitle {
+  width: 333px;
+  margin: 5px;
+}
+
+#description, #editDescription {
+  border: 1px solid #ddd;
+  margin: 5px;
+}
+
+#resultText,
+.dialogContent div.alert,
+.dialogContent div.warning {
+  height: 50px;
+}
+
+/**************************************************************************/
+/*                              W3 Overrides
+/**************************************************************************/
+canvas {
+  top: 0;
+  left: 0;
+  /*position: absolute;*/
+}
+
+hr {
+  display: block;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: auto;
+  -webkit-margin-end: auto;
+  border-style: solid;
+  border-width: 1px;
+  margin: 0;
+}
+
+ul {
+  display: block;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+}
+
+input, textarea, keygen, select, button {
+  font: 12pt "Open Sans";
+}
+
+/**************************************************************************/
+/*                         Classes
+/**************************************************************************/
+.bold {
+  font-weight: 600;
+}
+
+.icon-control {
+  float: right;
+  margin: 10px 15px;
+  color: #9e9e9e;
+  font-size: 1.2em;
+}
+
+.icon-control-small {
+  float: right;
+  width: 15px;
+  height: 10px;
+  margin-top: 5px;
+  color: #9e9e9e;
+}
+
+.icon-control:hover {
+  color: black;
+}
+
+.interactive-control {
+  font-size: 2em;
+  width: 30px;
+  height: 30px;
+  color: #bcbcbc;
+}
+
+.interactive-control:hover {
+  color: #692d91;
+}
+
+#saveSpinner {
+  left: -30px;
+  top: 10px;
+  position: relative;
+  float: right;
+}
+
+.contextMenu {
+  background: #eeeeee;
+  padding: 2px 1px 2px 1px;
+  cursor: default;
+  box-shadow: 3px 3px 1px #888;
+}
+
+.contextMenuItemDisabled {
+  font-family: "Open Sans";
+  font-size: 8pt;
+  padding: 2px 10px 2px 10px;
+  color: #9e9e9e;
+}
+
+.contextMenuItem {
+  font-family: "Open Sans";
+  font-size: 8pt;
+  padding: 2px 10px 2px 10px;
+}
+
+.contextMenu .contextMenuItem:hover {
+  color: white;
+  background: #03a9f4;
+}
+
+.contextMenu .contextMenuItem:active {
+  color: white;
+  background: #01579b;
+}
+
+div.warning {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: .7em;
+  padding: 15px 15px 15px 15px;
+}
+
+div.alert {
+  background-color: #ffccbc;
+  color: #bf360c;
+}
+
+div.warning {
+  background-color: #ffecb3;
+  color: #ff6e00;
+}
+
+div.center {
+  clear: both;
+}
+
+div.textDiv {
+  margin: 5px 10px;
+  box-sizing: border-box;
+}
+
+div.saveNavigation {
+  float: left;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 60px 10px 60px;
+}
+
+div.saveNavigationSmall, div.saveNavigationSmall_clear {
+  position: absolute;
+  bottom: 10px;
+  margin-top: 10px;
+}
+
+div.saveNavigationSmall {
+  width: 95%;
+}
+
+div.saveNavigationSmall_clear {
+  background: #fff;
+  width: 95%;
+}
+
+div.borderBox {
+  width: 100%;
+  box-sizing: border-box;
+  background: whitesmoke;
+  float: left;
+  height: 244px;
+  padding: 5px 60px 5px 60px;
+}
+
+div.feedbackDiv {
+  width: 93%;
+  height: 150px;
+  overflow: hidden;
+  padding: 0;
+  border: 1px dashed #616161;
+  margin: 45px 0 0 0;
+  background: white;
+}
+
+div.feedbackArea {
+  display: none;
+}
+
+div.imageContainer {
+  padding-top: 15px;
+}
+
+div.informational, div.prompt, div.alert, div.warning {
+  font-weight: 500;
+  padding: 2px 15px 2px 15px;
+  margin: 30px 60px 10px 60px;
+  font-size: 12pt;
+}
+
+div.informational span,
+div.prompt span,
+div.alert span,
+div.warning span {
+  display: inline-block;
+  font-size: .85em;
+  padding-top: 15px;
+}
+
+div.informational {
+  background-color: #dcedc8;
+  color: #33691e;
+}
+
+div.prompt {
+  background-color: #b3e5fc;
+  color: #01579b;
+}
+
+div#uploadDiv {
+  position: absolute;
+  bottom: 0px;
+  color: #0288d1;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 60px;
+}
+
+div#uploadMessage {
+  margin: 30px 120px;
+  border: none;
+}
+
+div.navContainer {
+  margin-top: 10px;
+  float: left;
+  background: white;
+  clear: both;
+  width: 100%;
+}
+
+div.navContainerRight {
+  margin-top: 10px;
+  float: right;
+  background: white;
+  clear: both;
+  width: 30%;
+  padding: 10px 0 10px 0;
+}
+
+div.dialogNavContainer {
+  float: left;
+  clear: both;
+  width: 100%;
+  background: white;
+  margin-top: 10px;
+}
+
+div.searchContainer {
+  display: inline-block;
+  width: 100%;
+  background: white;
+  padding: 2px 10px;
+  box-sizing: border-box;
+}
+
+div.searchBox {
+  padding: 8px 0 0 9px;
+  background: white;
+}
+
+.labelOption {
+  float: left;
+  clear: right;
+  width: 40%;
+  top: 13px;
+  position: relative;
+}
+
+i.help {
+  color: #03a9f4;
+  font-size: 1.5em;
+}
+
+input[type=text] + i.help {
+  position: relative;
+  top: 3px;
+}
+
+textarea + i.help {
+  position: relative;
+  top: -100px;
+}
+
+i.error,
+i.warning {
+  padding-left: 10px;
+  float: left;
+  width: 5%;
+}
+
+i.error {
+  color: #f3511d;
+}
+
+i.warning {
+  color: #ffa000;
+}
+
+i#loading {
+  position: absolute;
+  left: 47%;
+  top: 50%;
+  color: #0288d1;
+}
+
+div.rowDiv:hover i.removeRowButton {
+  display: block;
+}
+
+label.errorName,
+label.warningName {
+  float: left;
+  margin-right: 15px;
+  font-size: 10pt;
+  font-weight: 300;
+}
+
+label.errorName {
+  width: 30%;
+}
+
+label.warningName {
+  width: 20%;
+}
+
+label.errorExplanation,
+label.warningExplanation {
+  float: left;
+  font-size: 10pt;
+  font-weight: 100;
+}
+
+label.errorExplanation {
+  width: 60%;
+}
+
+button.warningButton {
+  width: 60px;
+  min-width: 60px;
+  height: 30px;
+  padding: 5px;
+}
+
+label.warningExplanation {
+  width: 40%;
+}
+
+label.subTitle {
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+/* this is not propogated in the DOM and needs to be set explicitly for all items */
+.noSelect, .carotaTextArea {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  -khtml-user-select: none;
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently*/
+}
+
+p {
+  font-size: 0.9em;
+}
+
+div.borderBox p {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+p.spacerSmall {
+  padding-top: 20px;
+}
+
+.rselector, .rselector30, .rselector50 {
+  float: left;
+  text-align: center;
+  margin-top: 10px;
+  padding: 3px;
+}
+
+.rselector img, .rselector30 img, .rselector50 img {
+  max-height: 100px;
+  width: auto;
+}
+
+.rselector50 {
+  width: 45%;
+}
+
+.spacer10 {
+  width: 5%;
+  float: left;
+  padding: 5px;
+}
+
+.rselector30 {
+  width: 32%;
+}
+
+.rselector, .rselector30, .rselector50, .description {
+  font-size: 10pt;
+}
+
+span.label {
+  clear: left;
+  float: left;
+  position: relative;
+  top: 7px;
+  text-align: right;
+  padding-right: 10px;
+}
+
+span.label25 {
+  width: 25%;
+}
+
+span.label40 {
+  width: 40%;
+}
+
+span.label100 {
+  width: 99%;
+}
+
+span.searchIcon {
+  color: #0288d1;
+}
+
+div.labelTitle, span.labelTitle {
+  text-align: right;
+  font-weight: 400;
+  color: #616161;
+}
+
+.ui-tabs-panel div.prompt,
+.ui-tabs-panel div.informational,
+.ui-tabs-panel div.alert,
+.ui-tabs-panel div.warning {
+  height: 60px;
+  border: 0;
+}
+
+/**************************************************************************/
+/*                         Canvas Specific Classes
+/**************************************************************************/
+.ClientResponseBox {
+  z-index: 1;
+}
+
+/**************************************************************************/
+/*                         Menu
+/**************************************************************************/
+div.menuContainer {
+  background: whitesmoke;
+  border: 1px solid #9e9e9e;
+  position: absolute;
+  margin: 0;
+  border-radius: 5px;
+}
+
+.menu {
+  background: none;
+}
+
+.subMenu {
+  float: left;
+  position: relative;
+  display: none;
+  overflow: hidden;
+  padding: 3px;
+  margin: 0;
+}
+
+.menuItem {
+  background: none;
+  padding: 1px;
+  float: left;
+  border-radius: 2px;
+  color: #424242;
+  min-width: 0;
+}
+
+.menuItem:focus {
+  outline: 0;
+}
+
+.menuItem:active {
+  border: none;
+}
+
+button.menuItem {
+  border: 1px hidden;
+  margin: 2px;
+  width: 25px;
+  height: 25px;
+  float: left;
+  font-size: .8em;
+}
+
+select.menuItem {
+  margin-top: 5px;
+  margin-right: 2px;
+  border: 1px hidden;
+  box-shadow: 0;
+  font-size: 0.8em;
+}
+
+select, input, button {
+  font-size: 10pt;
+}
+
+button.menuItem:hover {
+  background: #bcbcbc;
+}
+
+button.menuItem:active {
+  background: #01579b;
+  color: white;
+}
+
+button.menubold {
+  font-weight: 600;
+}
+
+button.buttonSelected {
+  background: #dfdfdf;
+}
+
+canvas.carotaEditorCanvas.feedbackEditor {
+  padding: 5px;
+  box-sizing: border-box;
+  border: 0;
+}
